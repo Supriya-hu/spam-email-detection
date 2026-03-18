@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detector</title>
+</head>
+<body>
+    <h1>AI Spam Detector</h1>
+
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter message">
+        <button type="submit">Check</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+
+</body>
+</html>
